@@ -400,7 +400,7 @@ pub trait IVirtualDesktopNotificationService: IUnknown {
     unsafe fn unregister(&self, cookie: DWORD) -> HRESULT;
 }
 
-#[com_interface("f31574d6-b682-4cdc-bd56-1827860abec6")]
+#[com_interface("b2f925b9-5a0f-4d2e-9f4d-2b1507593c10")]
 pub trait IVirtualDesktopManagerInternal: IUnknown {
     // Proc3
     unsafe fn get_count(&self, outCount: *mut UINT) -> HRESULT;
