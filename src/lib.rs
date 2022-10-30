@@ -7,7 +7,6 @@ mod hresult;
 mod hstring;
 mod immersive;
 mod interfaces;
-mod service;
 use crate::comhelpers::ComError;
 use crate::desktopid::DesktopID;
 use crate::service::VirtualDesktopService;
@@ -19,8 +18,8 @@ use std::sync::{
     atomic::{AtomicBool, Ordering},
     Mutex,
 };
-
 pub mod helpers;
+pub mod service;
 pub use crate::changelistener::VirtualDesktopEvent;
 pub use crate::desktop::Desktop;
 pub use crate::error::Error;
